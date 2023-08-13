@@ -6,7 +6,8 @@ const Contentimg = () => {
       <Image
         className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
         alt=""
-        src="Photo.png"
+        src="Photo.svg"
+        fill
       />
     </div>
   );

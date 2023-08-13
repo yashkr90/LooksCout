@@ -8,6 +8,7 @@ const ContentCard = () => {
           className="relative w-8 h-8 overflow-hidden shrink-0"
           alt=""
           src="Icon.svg"
+          fill
         />
       </div>
       <div className="flex-1 flex flex-col items-start justify-start gap-[12px]">
@@ -28,6 +29,7 @@ const ContentCard = () => {
             className="relative w-5 h-5 overflow-hidden shrink-0"
             alt=""
             src="arrow/right.svg"
+            fill
           />
         </div>
       </div>

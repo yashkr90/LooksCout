@@ -5,7 +5,7 @@ const TestimonialCard = () => {
   return (
     <div className="lg:w-[1280px] mx-auto  self-stretch rounded-[10px] bg-neutral-100 flex flex-col p-8 items-start lg:items-center justify-start gap-4 md:gap-8 text-left">
       <div className="self-stretch flex flex-col items-start lg:items-center justify-start gap-4 lg:gap-8">
-        <Image className="relative w-32 h-8" alt="" src="Company Logo.svg" />
+        <Image className="relative w-32 h-8" alt="" src="Company Logo.svg" fill />
         <div className="self-stretch lg:text-center relative tracking-[-0.01em]  leading-[30px] font-semibold text-xl md:text-3xl lg:text-9xl">
           <p>
             Thank you for making it painless, pleasant and most of all hassle
@@ -18,7 +18,8 @@ const TestimonialCard = () => {
         <Image
           className="rounded-[50px] w-10 h-10 object-cover"
           alt=""
-          src="Avatar.png"
+          src="Avatar.svg"
+          fill
         />
         <div className="flex flex-col items-start justify-start">
           <div className="relative tracking-[-0.1px] leading-[22px] font-medium">

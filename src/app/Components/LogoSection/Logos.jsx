@@ -11,21 +11,25 @@ const Logos = () => {
             className="relative w-32  h-8   overflow-hidden shrink-0"
             alt=""
             src="Press Logo.svg"
+            fill
           />
           <Image
             className="relative w-32  h-8   overflow-hidden shrink-0"
             alt=""
             src="Press Logo.svg"
+            fill
           />
           <Image
             className="relative w-32  h-8   overflow-hidden shrink-0"
             alt=""
             src="Press Logo.svg"
+            fill
           />
           <Image
             className="relative w-32  h-8   overflow-hidden shrink-0"
             alt=""
             src="Press Logo.svg"
+            fill
           />
         </div>
         <div className="self-stretch grid lg:grid-rows-1 lg:grid-flow-col lg:gap-16 md:grid-cols-2 md:place-items-center md:gap-y-8 md:gap-x-8 sm:gap-y-8 items-start">
@@ -33,11 +37,13 @@ const Logos = () => {
             className="relative w-32  h-8   overflow-hidden shrink-0"
             alt=""
             src="Press Logo.svg"
+            fill
           />
           <Image
             className="relative w-32  h-8   overflow-hidden shrink-0"
             alt=""
             src="Press Logo.svg"
+            fill
           />
         </div>
       </div>

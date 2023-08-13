@@ -5,7 +5,7 @@ const ContentCard = () => {
     <div className="flex-1 rounded-8xs flex flex-col border-2 border-solid border-red-500 items-start justify-start gap-[16px]">
       <div className="self-stretch flex flex-col items-start justify-start gap-[20px] sm:gap-4">
         <div className="rounded-11xl bg-primary-600 flex flex-row p-2 items-center justify-center">
-          <Image className="relative w-8 h-8" alt="" src="Icon.svg" />
+          <Image className="relative w-8 h-8" alt="" src="Icon.svg" fill/>
         </div>
         <div className="self-stretch flex flex-col items-start justify-start gap-[12px]">
           <div className="self-stretch relative md:tracking-[-0.01em] md:leading-[30px] md:text-3xl sm:text-xl font-semibold sm:tracking-[-0.02em] sm:leading-[28px] ">
@@ -20,6 +20,7 @@ const ContentCard = () => {
           className="relative w-5 h-5 overflow-hidden shrink-0"
           alt=""
           src="arrow/right.svg"
+          fill
         />
       </div>
     </div>

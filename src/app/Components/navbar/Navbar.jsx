@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="self-stretch  flex flex-row py-5 px-40 items-center justify-center z-[1] border-b-[1px] border-solid border-primary-400">
                       <div className="w-[1280px] flex flex-row py-0 px-8 box-border items-center justify-between">
                             <div className="flex flex-row items-center justify-start gap-[64px]">
-                                  <Image className="relative w-40 h-10" alt="" src="Company Logo.svg" />
+                                  <Image className="relative w-40 h-10" alt="" src="Company Logo.svg" fill />
                                   <div className="flex flex-row items-center justify-start gap-[32px]">
                                         <div className="rounded-8xs overflow-hidden flex flex-row items-center justify-center">
                                               <div className="relative leading-[22px] font-semibold">Home</div>

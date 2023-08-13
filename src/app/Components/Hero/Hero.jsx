@@ -19,13 +19,13 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-row items-center justify-start gap-[24px] text-mini">
-                <button className="relative text-base-white leading-[22px] font-semibold rounded-md bg-primary-600 shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] overflow-hidden flex flex-row py-3 px-[18px] items-center justify-center">
+              <button className=" sm:w-full md:w-auto flex flex-row items-center justify-center overflow-hidden  py-3 px-[18px]  gap-[24px] rounded-md  bg-primary-600 shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] text-mini">
+                <div className=" relative text-base-white leading-[22px] font-semibold ">
                   Get Started
-                </button>
+                </div>
 
                 {/* <div className="rounded-8xs overflow-hidden hidden" /> */}
-              </div>
+              </button>
             </div>
             <div className="self-stretch border-2 border-red-700 border-solid flex flex-col items-start justify-start gap-[16px] text-[14px]">
               <div className="self-stretch flex flex-row items-start justify-start">
@@ -38,21 +38,26 @@ const Hero = () => {
                   className="relative w-28 h-7  border-red-700 border-2 border-solid overflow-hidden shrink-0"
                   alt=""
                   src="Company Logo.svg"
+                  fill
+                  
                 />
                 <Image
                   className="relative w-28 h-7 overflow-hidden shrink-0"
                   alt=""
                   src="Company Logo.svg"
+                  fill
                 />
                 <Image
                   className="relative w-28 h-7 overflow-hidden shrink-0"
                   alt=""
                   src="Company Logo.svg"
+                  fill
                 />
                 <Image
                   className="relative w-28 h-7 overflow-hidden shrink-0"
                   alt=""
                   src="Company Logo.svg"
+                  fill
                 />
                 <div className="relative w-32 h-8 overflow-hidden shrink-0 hidden" />
               </div>
@@ -63,6 +68,7 @@ const Hero = () => {
           className="relative border-2 border-red-700 border-solid  overflow-hidden rounded-[10px] lg:w-[640px] lg:h-[656px] md:h-[628px] sm:max-w-full sm:h-[375.25px] sm:shrink-0"
           alt=""
           src="Hero 3 ~ desktop.svg"
+          fill
         />
       </div>
     </div>
