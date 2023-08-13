@@ -43,7 +43,8 @@ module.exports = {
               "primary-200": "#b1ccfb",
               "primary-400": "#648ef7",
               "gray-50": "#5f6d7e",
-              "gray-700": "#272d37"
+              "gray-700": "#272d37",
+              "gray-950": "#151b28",
           },
           "fontFamily": {
               "text-button-semibold-large": "Inter"
@@ -54,9 +55,13 @@ module.exports = {
           }
       },
       "fontSize": {
+          "smi": "13px",
           "mini": "15px",
           "base": "16px",
+          "xl": "20px",
           "3xl": "22px",
+          "5xl": "24px",
+          "9xl": "28px",
           "13xl": "32px"
       }
   },
