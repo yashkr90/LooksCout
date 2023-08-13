@@ -35,14 +35,16 @@ const Hero = () => {
               </div>
               <div className="self-stretch grid md:grid-cols-4 md:place-items-start sm:place-items-center sm:grid-cols-2 gap-x-0">
                 <Image
-                  className="relative w-28 h-7  border-red-700 border-2 border-solid overflow-hidden shrink-0"
+                  className="relative w-28 h-7 flex-1 border-red-700 border-2 border-solid overflow-hidden"
                   alt=""
+                  width={100}
+                  height={28}
                   src="Company Logo.svg"
-                  fill
+                  
                   
                 />
                 <Image
-                  className="relative w-28 h-7 overflow-hidden shrink-0"
+                  className="relative w-28 h-7 overflow-hidden flex-1 object-cover"
                   alt=""
                   src="Company Logo.svg"
                   fill
@@ -64,12 +66,16 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        <div  className="relative border-2 border-red-700 border-solid  overflow-hidden rounded-[10px] lg:w-[640px] lg:h-[656px] md:h-[628px] sm:max-w-full sm:h-[375.25px] sm:shrink-0">
         <Image
-          className="relative border-2 border-red-700 border-solid  overflow-hidden rounded-[10px] lg:w-[640px] lg:h-[656px] md:h-[628px] sm:max-w-full sm:h-[375.25px] sm:shrink-0"
+         
           alt=""
           src="Hero 3 ~ desktop.svg"
           fill
         />
+
+        </div>
+        
       </div>
     </div>
   );
