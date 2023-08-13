@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from 'next/image';
 const LogoHeader = () => {
   return (
     <div className="lg:w-[1280px] flex flex-col py-0 lg:px-8 px-0 box-border items-center justify-center">

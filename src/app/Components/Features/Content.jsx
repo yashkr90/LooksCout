@@ -1,5 +1,6 @@
 import React from "react";
 import ContentCard from "./ContentCard";
+import Image from 'next/image';
 const Content = () => {
   return (
     <div className="lg:w-[1280px] flex flex-col py-0 px-8 box-border items-center justify-start text-left">

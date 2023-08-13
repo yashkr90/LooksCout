@@ -1,10 +1,10 @@
 import React from "react";
-
+import Image from 'next/image';
 const ContentCard = () => {
   return (
     <div className="self-stretch flex flex-row items-start justify-start gap-[16px]">
       <div className="rounded-11xl bg-primary-600 flex flex-row p-2 items-center justify-center">
-        <img
+        <Image
           className="relative w-8 h-8 overflow-hidden shrink-0"
           alt=""
           src="Icon.svg"
@@ -24,7 +24,7 @@ const ContentCard = () => {
           <div className="relative leading-[22px] font-semibold">
             Learn more
           </div>
-          <img
+          <Image
             className="relative w-5 h-5 overflow-hidden shrink-0"
             alt=""
             src="arrow/right.svg"

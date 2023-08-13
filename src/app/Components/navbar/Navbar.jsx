@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image';
 const Navbar = () => {
   return (
     <>
@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="self-stretch  flex flex-row py-5 px-40 items-center justify-center z-[1] border-b-[1px] border-solid border-primary-400">
                       <div className="w-[1280px] flex flex-row py-0 px-8 box-border items-center justify-between">
                             <div className="flex flex-row items-center justify-start gap-[64px]">
-                                  <img className="relative w-40 h-10" alt="" src="Company Logo.svg" />
+                                  <Image className="relative w-40 h-10" alt="" src="Company Logo.svg" />
                                   <div className="flex flex-row items-center justify-start gap-[32px]">
                                         <div className="rounded-8xs overflow-hidden flex flex-row items-center justify-center">
                                               <div className="relative leading-[22px] font-semibold">Home</div>
@@ -18,7 +18,7 @@ const Navbar = () => {
                                         <div className="flex flex-col items-start justify-center">
                                               <div className="self-stretch rounded-8xs h-[22px] flex flex-row items-center justify-start gap-[12px]">
                                                     <div className="relative leading-[22px] font-semibold">Resources</div>
-                                                    <img className="relative w-5 h-5" alt="" src="chevron down.svg" />
+                                                    <Image className="relative w-5 h-5" alt="" src="chevron down.svg" />
                                               </div>
                                         </div>
                                         <div className="rounded-8xs overflow-hidden flex flex-row items-center justify-center">

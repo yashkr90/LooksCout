@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from 'next/image';
 const ContentHeader = () => {
   return (
     <div className="lg:w-[1280px] sm:w-full flex flex-col py-0 lg:px-8 box-border items-center justify-center">

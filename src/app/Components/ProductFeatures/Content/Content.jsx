@@ -1,7 +1,7 @@
 import React from "react";
 import ContentCard from "./ContentCard";
 import Contentimg from "./Contentimg";
-
+import Image from 'next/image';
 const Content = () => {
   return (
     

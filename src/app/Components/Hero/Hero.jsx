@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const Hero = () => {
   return (
     <div className=" bg-primary-900  overflow-hidden flex items-center justify-center text-mini text-base-white font-text-button-semibold-large">
@@ -32,22 +34,22 @@ const Hero = () => {
                 </div>
               </div>
               <div className="self-stretch grid md:grid-cols-4 md:place-items-start sm:place-items-center sm:grid-cols-2 gap-x-0">
-                <img
+                <Image
                   className="relative w-28 h-7  border-red-700 border-2 border-solid overflow-hidden shrink-0"
                   alt=""
                   src="Company Logo.svg"
                 />
-                <img
+                <Image
                   className="relative w-28 h-7 overflow-hidden shrink-0"
                   alt=""
                   src="Company Logo.svg"
                 />
-                <img
+                <Image
                   className="relative w-28 h-7 overflow-hidden shrink-0"
                   alt=""
                   src="Company Logo.svg"
                 />
-                <img
+                <Image
                   className="relative w-28 h-7 overflow-hidden shrink-0"
                   alt=""
                   src="Company Logo.svg"
@@ -57,7 +59,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <img
+        <Image
           className="relative border-2 border-red-700 border-solid  overflow-hidden rounded-[10px] lg:w-[640px] lg:h-[656px] md:h-[628px] sm:max-w-full sm:h-[375.25px] sm:shrink-0"
           alt=""
           src="Hero 3 ~ desktop.svg"

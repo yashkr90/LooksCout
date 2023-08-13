@@ -1,6 +1,6 @@
 import ContentHeader from "./ContentHeader";
 import Content from "./Content/Content";
-
+import Image from 'next/image';
 const ProductFeatures = (props) => {
   	
     return (
