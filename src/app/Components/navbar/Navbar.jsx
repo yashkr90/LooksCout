@@ -7,6 +7,7 @@ import headerlogo from "../../../assets/HeaderCompany/CompanyLogo.svg";
 import burgerMenu from "../../../assets/big.svg";
 import Menu from "./Menu";
 import Register from "./Register";
+import DropDown from "./DropDown";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -47,13 +48,7 @@ const Navbar = () => {
             </div>
 
             {open ? (
-              <div className="w-full absolute bg-primary-400 flex items-center justify-center top-[70px] left-0 ">
-                <div className=" lg:hidden px-4 mx-auto w-full flex flex-col gap-4 py-1 justify-center ">
-                  <Menu />
-
-                  <Register />
-                </div>
-              </div>
+              <DropDown />
             ) : (
               ""
             )}

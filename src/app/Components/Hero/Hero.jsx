@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Gitlab from "../../../assets/HeroCompanyLogo/CompanyLogo1.svg";
 import Slack from "../../../assets/HeroCompanyLogo/CompanyLogo2.svg";
@@ -5,7 +6,7 @@ import Netflix from "../../../assets/HeroCompanyLogo/CompanyLogo3.svg";
 import Paypal from "../../../assets/HeroCompanyLogo/CompanyLogo4.svg";
 import HeroPhoto from "../../../assets/GraphicElements.svg";
 import HeroDesktop from "../../../assets/HeroDesktop.svg";
-
+import { motion } from "framer-motion";
 
 const logos = [Gitlab, Slack, Netflix, Paypal];
 
@@ -16,7 +17,12 @@ const Hero = () => {
         <div className="content self-stretch  lg:order-first sm:order-last flex-1 flex flex-col items-start justify-center">
           <div className="self-stretch h-[528px] flex flex-col items-start justify-end lg:gap-[80px] sm:gap-[32px]">
             <div className="self-stretch flex flex-col items-start justify-start gap-[32px]">
-              <div className="self-stretch flex flex-col items-start justify-start md:gap-[24px] sm:gap-[16px]">
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ type: "spring", bounce: 0.4, duration: 0.8 }}
+                className="self-stretch flex flex-col items-start justify-start md:gap-[24px] sm:gap-[16px]"
+              >
                 <b className="self-stretch relative md:tracking-[-0.01em] md:leading-[60px] sm:font-semibold sm:leading-[44px] sm:tracking-[-0.1px]">
                   Your Supercharged Design Workflow.
                 </b>
@@ -27,7 +33,7 @@ const Hero = () => {
                     we decided to build upon it.
                   </div>
                 </div>
-              </div>
+              </motion.div>
               <button className=" sm:w-full md:w-auto flex flex-row items-cente hover:cursor-pointer hover:ring-1 hover:ring-white justify-center overflow-hidden  py-3 px-[18px]  gap-[24px] rounded-md  bg-primary-600 shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] text-mini">
                 <div className=" relative text-base-white leading-[22px] font-semibold ">
                   Get Started
@@ -41,8 +47,11 @@ const Hero = () => {
                 </div>
               </div>
               <div className="self-stretch grid md:grid-cols-4 md:place-items-start sm:place-items-center sm:grid-cols-2 gap-x-0">
-                {logos.map((logo,idx) => (
-                  <div key={idx} className="relative w-28 h-7 flex-1  overflow-hidden">
+                {logos.map((logo, idx) => (
+                  <div
+                    key={idx}
+                    className="relative w-28 h-7 flex-1  overflow-hidden"
+                  >
                     <Image
                       alt="brandlogos"
                       src={logo}
@@ -56,7 +65,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="relative  overflow-hidden rounded-[10px] lg:w-[640px] lg:h-[656px] md:h-[628px] w-full sm:h-[375.25px] sm:shrink-0">
-          <Image alt="" src={HeroPhoto} style={{ objectFit: "fill" }} fill/>
+          <Image alt="" src={HeroPhoto} style={{ objectFit: "fill" }} fill />
         </div>
       </div>
     </div>
