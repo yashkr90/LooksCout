@@ -41,8 +41,8 @@ const Hero = () => {
                 </div>
               </div>
               <div className="self-stretch grid md:grid-cols-4 md:place-items-start sm:place-items-center sm:grid-cols-2 gap-x-0">
-                {logos.map((logo) => (
-                  <div className="relative w-28 h-7 flex-1  overflow-hidden">
+                {logos.map((logo,idx) => (
+                  <div key={idx} className="relative w-28 h-7 flex-1  overflow-hidden">
                     <Image
                       alt="brandlogos"
                       src={logo}

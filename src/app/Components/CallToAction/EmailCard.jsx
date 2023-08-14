@@ -24,8 +24,8 @@ const EmailCard = () => {
       </div>
 
       <div className="grid md:grid-cols-3 sm:grid-cols-2 items-start justify-start gap-x-[40px] sm:gap-y-4 text-base text-gray-700">
-        {checkbox.map((item) => (
-          <div className="flex flex-row items-start justify-start gap-[12px]">
+        {checkbox.map((item,idx) => (
+          <div key={idx} className="flex flex-row items-start justify-start gap-[12px]">
             <div className="flex flex-row py-0.5 px-0 items-start justify-start">
               <div className="relative flex items-center justify-center bg-primary-600 rounded-xl w-5 h-5">
               <Image

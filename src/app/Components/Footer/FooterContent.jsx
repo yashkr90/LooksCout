@@ -28,8 +28,8 @@ const FooterContent = () => {
           </div>
         </div>
         <div className="flex flex-col items-start justify-start gap-[12px]">
-          {links2.map((link) => (
-            <div className="rounded-8xs overflow-hidden flex flex-row items-center justify-center">
+          {links2.map((link,idx) => (
+            <div key={idx} className="rounded-8xs overflow-hidden flex flex-row items-center justify-center">
               <a
                 href="#"
                 className="relative tracking-[-0.1px] text-neutral-800 leading-[24px] no-underline font-medium hover:underline "
@@ -48,8 +48,8 @@ const FooterContent = () => {
           </div>
         </div>
         <div className="self-stretch flex flex-col items-start justify-start gap-[12px]">
-          {links1.map((link) => (
-            <div className="rounded-8xs overflow-hidden flex flex-row items-center justify-center">
+          {links1.map((link,idx) => (
+            <div key={idx} className="rounded-8xs overflow-hidden flex flex-row items-center justify-center">
               <a
                 href="#"
                 className="relative tracking-[-0.1px] text-neutral-800 leading-[24px] no-underline font-medium hover:underline "
