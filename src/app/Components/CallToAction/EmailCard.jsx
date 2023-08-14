@@ -14,7 +14,7 @@ const EmailCard = () => {
               className="flex-1 rounded-md sm:w-full md:w-auto shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)]  md:rounded-tr-none md:rounded-br-none bg-base-white box-border h-[46px] overflow-hidden flex flex-row py-3 px-4 items-center justify-start border-[1px] border-solid border-neutral-700"
             />
 
-            <button className="md:rounded-tl-none sm:w-full md:w-auto  rounded-md md:rounded-bl-none bg-primary-600 overflow-hidden flex flex-row py-3 px-[18px] items-center justify-center text-base-white">
+            <button type="submit" className="md:rounded-tl-none sm:w-full md:w-auto hover:bg-primary-400 rounded-md md:rounded-bl-none bg-primary-600 overflow-hidden flex flex-row py-3 px-[18px] items-center justify-center text-base-white">
               <div className="relative leading-[22px] font-semibold">
                 Submit
               </div>

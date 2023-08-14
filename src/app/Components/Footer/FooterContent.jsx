@@ -79,7 +79,7 @@ const FooterContent = () => {
                 className="flex-1 text-white focus:outline-none focus:border-blue-500 rounded-tl-md rounded-tr-none rounded-br-none rounded-bl-md bg-gray-600 box-border h-[46px] overflow-hidden flex flex-row py-3 px-4 items-center justify-start border-[1px] border-solid border-gray-300"
               />
 
-              <button className="rounded-tl-none rounded-tr-md rounded-br-md rounded-bl-none bg-primary-600 overflow-hidden flex flex-row py-3 px-[18px] items-center justify-center text-base-white">
+              <button type="submit" className="rounded-tl-none rounded-tr-md rounded-br-md rounded-bl-none hover:bg-primary-400  bg-primary-600 overflow-hidden flex flex-row py-3 px-[18px] items-center justify-center text-base-white">
                 <div className="relative leading-[22px] font-semibold">
                   Submit
                 </div>

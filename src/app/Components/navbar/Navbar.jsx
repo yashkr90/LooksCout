@@ -8,6 +8,12 @@ import burgerMenu from "../../../assets/big.svg";
 import Menu from "./Menu";
 import Register from "./Register";
 import DropDown from "./DropDown";
+import { motion, AnimatePresence } from "framer-motion";
+
+const variants = {
+  open: { opacity: 1, x: 0 },
+  closed: { opacity: 0, x: "-100%" },
+};
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -48,7 +54,46 @@ const Navbar = () => {
             </div>
 
             {open ? (
-              <DropDown />
+              <AnimatePresence>
+                <motion.div
+                  initial={{
+                    height: 0,
+                    opacity: 0,
+                  }}
+                  animate={{
+                    height: "auto",
+                    opacity: 1,
+                    transition: {
+                      height: {
+                        duration: 0.4,
+                      },
+                      opacity: {
+                        duration: 0.25,
+                        delay: 0.15,
+                      },
+                    },
+                  }}
+                  exit={{
+                    height: 0,
+                    opacity: 0,
+                    transition: {
+                      height: {
+                        duration: 0.6,
+                      },
+                      opacity: {
+                        duration: 0.25,
+                      },
+                    },
+                  }}
+                  className="w-full absolute bg-primary-400 flex items-center justify-center top-[70px] left-0 "
+                >
+                  <div className=" lg:hidden px-4 mx-auto w-full flex flex-col gap-4 py-4 justify-center ">
+                    <Menu />
+
+                    <Register />
+                  </div>
+                </motion.div>
+              </AnimatePresence>
             ) : (
               ""
             )}
