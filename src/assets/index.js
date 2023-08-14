@@ -1,0 +1,1 @@
+export {default as Headerlogo} from "./HeaderCompany/CompanyLogo.svg";

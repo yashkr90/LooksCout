@@ -14,7 +14,7 @@ export default function Home() {
     <Hero />
     <Features />
     <ProductFeatures ContentHeader={true} />
-    <ProductFeatures />
+    <ProductFeatures ContentHeader={false} />
     <Testimonial />
     <BlogPost />
     <LogoSection />

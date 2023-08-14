@@ -1,5 +1,6 @@
 import React from "react";
-
+import Image from "next/image";
+import check from "../../../assets/check.svg";
 const checkbox = ["Fully Secure", "24/7 Support", "Done Deal"];
 
 const EmailCard = () => {
@@ -26,11 +27,14 @@ const EmailCard = () => {
         {checkbox.map((item) => (
           <div className="flex flex-row items-start justify-start gap-[12px]">
             <div className="flex flex-row py-0.5 px-0 items-start justify-start">
-              <img
-                className="relative rounded-xl w-5 h-5"
-                alt=""
-                src=".Checkbox Base.svg"
+              <div className="relative flex items-center justify-center bg-primary-600 rounded-xl w-5 h-5">
+              <Image
+                style={{objectFit:"cover"}}
+                alt="checkbox"
+                src={check}
               />
+              </div>
+              
             </div>
             <div className="flex flex-col items-start justify-start">
               <div className="relative tracking-[-0.1px] leading-[24px] font-medium">
