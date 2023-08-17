@@ -98,7 +98,7 @@ const Navbar = () => {
               ""
             )}
 
-            <div className=" hidden lg:flex lg:flex-row  sm:flex-col items-center justify-end gap-[24px]">
+            <div className=" hidden lg:flex lg:flex-row   flex-col items-center justify-end gap-[24px]">
               <Register />
             </div>
           </div>

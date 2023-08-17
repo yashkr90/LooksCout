@@ -19,7 +19,7 @@ const BlogCard = ({ blogimg, avatar, title, name, desc, role }) => {
       }}
       className="flex-1 rounded-8xs flex flex-col items-start justify-center md:gap-[24px] gap-3"
     >
-      <div className="self-stretch relative rounded-3xs  overflow-hidden md:h-[300px] sm:h-[250px] shrink-0">
+      <div className="self-stretch relative rounded-3xs  overflow-hidden md:h-[300px]  h-[250px] shrink-0">
         <Image alt="" src={blogimg} fill style={{ objectFit: "fill" }} />
       </div>
 

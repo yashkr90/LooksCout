@@ -39,10 +39,10 @@ const blogs = [
 
 const BlogsBody = () => {
   return (
-    // <div className="lg:w-[1280px] w-full flex  md:flex-row   sm:flex-col max-h-screen  py-0 px-8 box-border items-center justify-start text-left text-3xl">
+    // <div className="lg:w-[1280px] w-full flex  md:flex-row    flex-col max-h-screen  py-0 px-8 box-border items-center justify-start text-left text-3xl">
     <div className="lg:w-[1280px] flex flex-row  py-0 lg:px-8 box-border items-center justify-center gap-[32px] text-left text-3xl">
-      {/* <div className=" flex  md:space-x-8 sm:flex sm:flex-col  sm:space-y-8  "> */}
-      <div className="lg:flex md:hidden sm:flex lg:flex-row sm:flex-col py-0 lg:px-8 sm:px-4 sm:py-8 box-border items-center justify-center lg:gap-[32px] sm:gap-6">
+      {/* <div className=" flex  md:space-x-8  flex  flex-col   space-y-8  "> */}
+      <div className="lg:flex md:hidden  flex lg:flex-row  flex-col py-0 lg:px-8  px-4  py-8 box-border items-center justify-center lg:gap-[32px]  gap-6">
       {blogs.map((blog) => (
         <BlogCard
           key={blog.name}
@@ -55,7 +55,7 @@ const BlogsBody = () => {
         />
       ))}
       </div>
-      <div className="md:flex sm:hidden lg:hidden md:flex-row py-0 px-0 box-border items-center justify-center  gap-[32px]">
+      <div className="md:flex  hidden lg:hidden md:flex-row py-0 px-0 box-border items-center justify-center  gap-[32px]">
       {blogs.map((blog)=>{
 
         if(blog.id!==3)

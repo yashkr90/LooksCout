@@ -16,14 +16,14 @@ const ContentCard = ({ title, desc, Icon }) => {
       }}
       className="flex-1 rounded-8xs flex flex-col items-start justify-start gap-[16px]"
     >
-      <div className="self-stretch flex flex-col items-start justify-start gap-[20px] sm:gap-4">
+      <div className="self-stretch flex flex-col items-start justify-start gap-[20px]  gap-4">
         <div className="rounded-11xl bg-primary-600 flex flex-row p-2 items-center justify-center">
           <div className="relative w-8 h-8">
             <Image alt="" src={Icon} fill />
           </div>
         </div>
         <div className="self-stretch flex flex-col items-start justify-start gap-[12px]">
-          <div className="self-stretch relative md:tracking-[-0.01em] md:leading-[30px] md:text-3xl sm:text-xl font-semibold sm:tracking-[-0.02em] sm:leading-[28px] ">
+          <div className="self-stretch relative md:tracking-[-0.01em] md:leading-[30px] md:text-3xl  text-xl font-semibold  tracking-[-0.02em]  leading-[28px] ">
             {title}
           </div>
           <div className="self-stretch relative text-base tracking-[-0.1px] leading-[24px] text-gray-50">
