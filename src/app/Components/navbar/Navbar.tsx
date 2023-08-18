@@ -16,7 +16,7 @@ const variants = {
 };
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<boolean>(false);
   return (
     <>
       <div className=" bg-primary-900 w-full overflow-hidden flex flex-col items-center justify-center text-left text-mini text-base-white font-text-button-semibold-large">
