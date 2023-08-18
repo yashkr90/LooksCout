@@ -7,8 +7,11 @@ import Paypal from "../../../assets/HeroCompanyLogo/CompanyLogo4.svg";
 import HeroPhoto from "../../../assets/GraphicElements.svg";
 import HeroDesktop from "../../../assets/HeroDesktop.svg";
 import { motion } from "framer-motion";
+import { StaticImageData } from "next/image";
 
 const logos = [Gitlab, Slack, Netflix, Paypal];
+
+
 
 const Hero = () => {
   return (

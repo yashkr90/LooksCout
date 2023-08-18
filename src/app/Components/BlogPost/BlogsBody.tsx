@@ -6,8 +6,19 @@ import avatar3 from "../../../assets/Avatar(3).png";
 import blogimg1 from "../../../assets/Rectangle1.png";
 import blogimg2 from "../../../assets/Rectangle2.png";
 import blogimg3 from "../../../assets/Rectangle3.png";
+import { StaticImageData } from "next/image";
 
-const blogs = [
+interface Blog {
+  id: number;
+  blogimg: StaticImageData;
+  title: string;
+  desc: string;
+  name: string;
+  role: string;
+  avatar: StaticImageData;
+}
+
+const blogs:Blog[] = [
   {
     id: 1,
     blogimg: blogimg1,
@@ -37,15 +48,15 @@ const blogs = [
   },
 ];
 
-const BlogsBody = () => {
+const BlogsBody:React.FC = () => {
   return (
     // <div className="lg:w-[1280px] w-full flex  md:flex-row    flex-col max-h-screen  py-0 px-8 box-border items-center justify-start text-left text-3xl">
     <div className="lg:w-[1280px] flex flex-row  py-0 lg:px-8 box-border items-center justify-center gap-[32px] text-left text-3xl">
       {/* <div className=" flex  md:space-x-8  flex  flex-col   space-y-8  "> */}
       <div className="lg:flex md:hidden  flex lg:flex-row  flex-col py-0 lg:px-8  px-4  py-8 box-border items-center justify-center lg:gap-[32px]  gap-6">
-      {blogs.map((blog) => (
+      {blogs.map((blog: Blog) => (
         <BlogCard
-          key={blog.name}
+          key={blog.id}
           blogimg={blog.blogimg}
           title={blog.title}
           desc={blog.desc}

@@ -3,7 +3,14 @@ import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
 import right from "../../../assets/right.svg";
-const ContentCard = ({ title, desc, Icon }) => {
+
+interface contentCard{
+  title: string;
+  desc: string;
+  Icon: string;
+}
+
+const ContentCard: React.FC <contentCard>= ({ title, desc, Icon }) => {
   return (
     <motion.div
       initial={{ x: -100 }}

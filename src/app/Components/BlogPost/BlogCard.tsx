@@ -2,8 +2,18 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { StaticImageData } from "next/image";
 
-const BlogCard = ({ blogimg, avatar, title, name, desc, role }) => {
+interface Props {
+  blogimg: StaticImageData;
+  avatar: StaticImageData;
+  title: string;
+  name: string;
+  desc: string;
+  role: string;
+}
+
+const BlogCard:React.FC<Props> = ({ blogimg, avatar, title, name, desc, role }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.1,transition:{
